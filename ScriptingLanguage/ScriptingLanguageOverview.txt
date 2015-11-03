@@ -1,0 +1,2 @@
+The goal is to design a scripting language that translates into python almost 1 to 1. That way it's easy to "compile" to python
+and make it faster at execution.
