@@ -21,13 +21,9 @@ statement:
 
 	something(x);
 	
-	y = x++;
-	z = ++x;
-	x++;
-	
-	h = x--;
-	i = --x;
-	x--;
+	y = x+3
+	z = y-(100*x)
+	x -= 1
 	
 
 would translate into the python code:
@@ -49,14 +45,6 @@ would translate into the python code:
 
 	something(x);
 	
-	y = x;
-	x += 1;
-	z = x+1;
-	x += 1;
-	x += 1;
-
-	h = x;
-	x -= 1;
-	i = x-1;
-	x -= 1;
+	y = x + 3;
+	z = y-(100*x);
 	x -= 1;
