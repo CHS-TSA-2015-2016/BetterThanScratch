@@ -1,0 +1,62 @@
+LWSL Syntax Idea:
+
+statement:
+    a "sentance", or command, it starts at the begining of the line, ends at the newline character, and does something.
+	
+
+	import all from STDLib;	
+
+	x=0
+	function something(argument){
+		statement1
+		statement2
+		statement3
+		statement4
+	}
+
+	// I think we're going to use C-style comments in the language
+	/*
+		In my mind it'll be better for the beginners who might want to pick up Java or C later on
+	*/
+
+	something(x);
+	
+	y = x++;
+	z = ++x;
+	x++;
+	
+	h = x--;
+	i = --x;
+	x--;
+	
+
+would translate into the python code:
+	
+
+	from STDLib import *;
+
+	x = 0;
+	def something(argument):
+    	    statement1;
+    	    statement2;
+    	    statement3;
+    	    statement4;
+
+	# I think we're going to use C-style comments in the language
+	"""
+		In my mind it'll be better for the beginners who might want to pick up Java or C later on
+	"""
+
+	something(x);
+	
+	y = x;
+	x += 1;
+	z = x+1;
+	x += 1;
+	x += 1;
+
+	h = x;
+	x -= 1;
+	i = x-1;
+	x -= 1;
+	x -= 1;
