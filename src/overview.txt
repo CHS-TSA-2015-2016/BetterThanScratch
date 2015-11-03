@@ -1,0 +1,37 @@
+Authors:
+  Alex Gatewood, Spencer Brough
+
+Date Started:
+  10/26/2015
+Date Ended:
+
+Deadline:
+
+Mission Statement:
+  Provide a simple to learn and simple to use environment for beginners to feel comforable programming,
+  yet powerful enough to satisfy the experts and provide a stable framework capable of creating a wide array
+  of applications.
+----Application
+Name:
+  BetterThanScratch (Not official)
+
+Language:
+  Python
+
+Gui-Library:
+  Tkinter
+
+Target Audience:
+  Beginners and experts alike
+
+Application Purpose:
+  General application development
+
+IDE:
+  TBD
+
+Style of Editor:
+  Drag'n'Drop - Scripting Hybrid
+
+Scripting Language of Editor:
+  TBD
