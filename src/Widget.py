@@ -32,6 +32,8 @@ WIDGET_TYPES = {
 
 """
     A dictionary that keeps track of how many of each widget are existing in the entire project
+    When a widget is created, it automatically adds one to it's type,
+    when it's destroyed, it automatically removes one.
 """
 WidgetCount = {
     "Panel": 0,
@@ -59,6 +61,12 @@ WidgetCount = {
     "Custom": 0
 };
 
+"""
+    A Widget manager object,
+    you "give" this widgets and it will update all of it's widgets with
+    update
+    and destroy all widgets that have previously been destroyed
+"""
 class WidgetManager(object):
     def __init__(self, widgets=[]):
         self.widgets = widgets;
@@ -79,6 +87,9 @@ class WidgetManager(object):
         self.updateWidgets();
         self.cleanWidets();
 
+"""
+    Panel, this mirrors Tkinter's Frame object, it's a rectangular container for widgets.
+"""
 class Panel(BasicObject):
     def __init__(self, wm, rect, widgets=[]):
         self.x, self.y = rect.getPosition();
@@ -122,8 +133,3 @@ class Panel(BasicObject):
             self.widgets.pop(index);
         self.widgetManager.doomedWidgets.append(self);
 
-r = Rectangle(10, 10, 300, 300);
-wm = WidgetManager();
-p = Panel(wm, r);
-print p;
-input("...");
