@@ -1,0 +1,4 @@
+Regex expressions:
+"\(.*?\)" -> will get find a match for a ( followed by any number of characters ending with a ).
+"//.*?$" -> fill look for single line comments that start with //
+"/\*.*?\*/" -> looks for multi line comments using /**/
