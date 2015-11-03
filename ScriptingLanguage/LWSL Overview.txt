@@ -4,7 +4,11 @@ statement:
     a "sentance", or command, it starts at the begining of the line, ends at the newline character, and does something.
 	
 
-	import all from STDLib;	
+	import all from STDLib
+	import item from MyLib
+	
+	// my ____ means ____ allows you to define tokens, bascially, this tells the interpreter to replace all tokens PI with 3.1415926
+	my PI means 3.1415926
 
 	x=0
 	function something(argument){
@@ -19,17 +23,74 @@ statement:
 		In my mind it'll be better for the beginners who might want to pick up Java or C later on
 	*/
 
-	something(x);
+	something(x)
 	
 	y = x+3
 	z = y-(100*x)
 	x -= 1
 	
+	array = []
+	
+	// add ____ to ____ allows us to add a new element to the array	
+	add "0" to array
+	add "1" to array
+	add "Hello" to array
+	add "World" to array
+
+	array[0] = "not 0";
+
+	while(x > 125){
+		statement
+		x -= 1
+	}
+	
+	for(index=0; index<123; index+=1){
+		statement
+	}
+	
+	for(index in array){
+		statement
+	}
+	
+	if(x == 0){
+		//something
+	} else if(x == 1){
+		//something else
+	} else {
+		//something completely different.
+	}
+
+	// choice is basically a switch statment
+	choice(x){
+		option 0 {
+			// do something
+		}
+		
+		option 1 {
+			// do something else
+		}
+		
+		option 2 {
+			// some other thing
+		}
+
+		option "hello"{
+			// something else
+		}
+	
+		none {
+			// do something else entirely
+		}
+	}
 
 would translate into the python code:
 	
 
 	from STDLib import *;
+	from MyLib import item;
+
+	# my ____ means ____ allows you to define tokens, basically, this tells the interpreter to replace all tokesn PI with 3.1415926
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{my and means doesn't get interpreted into python, that's for us to use.}
 
 	x = 0;
 	def something(argument):
@@ -48,3 +109,32 @@ would translate into the python code:
 	y = x + 3;
 	z = y-(100*x);
 	x -= 1;
+
+	while x > 125:
+	    statement;
+	    x -= 1;
+	
+	for index in range(123):
+		statement;
+	
+	for index in array:
+		statement;
+	
+	if x == 0:
+	    # something
+	elif x == 1:
+	    # something else
+	else:
+	    # something completely different.
+
+	# choice is basically a switch statement
+	if x == 0:
+	    # do something
+	elif x == 1:
+	    # do something else
+	elif x == 2:
+	    # do some other thing
+	elif x == "hello":
+	    # something else
+	else:
+	    # do something else entirely
