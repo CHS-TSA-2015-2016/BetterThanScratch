@@ -1,3 +1,4 @@
+__author__ = 'Spencer'
 import BasicObject;
 import Rectangle
 
@@ -100,7 +101,7 @@ class Panel(BasicObject):
         self.widgetManager.addWidget(self);
 
     def __str__(self):
-        widetStrings = [];
+        widgetStrings = [];
         for widget in self.widgets:
             widgetStrings.append(widget.__str__());
         representation = "{ Panel<x=%s y=%s, width=%s, height=%s> << Bound Widgets: [%s]}" % (self.x, self.y, self.width, self.height, widgetStrings.join("|"));

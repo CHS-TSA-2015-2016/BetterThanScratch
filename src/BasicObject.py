@@ -1,4 +1,4 @@
-
+__author__ = 'Spencer'
 """
     A basic object that provides a skeleton backing of custom objects
     The skeleton includes:

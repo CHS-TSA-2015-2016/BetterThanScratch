@@ -1,3 +1,4 @@
+__author__ = 'Spencer'
 """
     Generic Rectangle class
     It simply defines a mathematical space, and
