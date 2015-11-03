@@ -1,11 +1,11 @@
 LWSL Syntax Idea:
 
 statement:
-    a "sentance", or command, it starts at the begining of the line, ends at the newline character, and does something.
+    a "sentence", or command, it starts at the begining of the line, ends at the newline character, and does something.
 	
 
-	import all from STDLib
-	import item from MyLib
+	use all from STDLib
+	use item from MyLib
 	
 	// my ____ means ____ allows you to define tokens, bascially, this tells the interpreter to replace all tokens PI with 3.1415926
 	my PI means 3.1415926
