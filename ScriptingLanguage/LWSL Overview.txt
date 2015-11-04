@@ -23,11 +23,22 @@ statement:
 		In my mind it'll be better for the beginners who might want to pick up Java or C later on
 	*/
 
+	function factorial(n){
+		value = 1
+		while(n > 1){
+			value *= n
+			n -= 1
+		}
+		return value
+	}
+
 	something(x)
 	
 	y = x+3
 	z = y-(100*x)
 	x -= 1
+	
+	ten_fac = factorial(10)
 	
 	array = []
 	
@@ -103,12 +114,21 @@ would translate into the python code:
 	"""
 		In my mind it'll be better for the beginners who might want to pick up Java or C later on
 	"""
-
+	
+	def factorial(n):
+	    value = 1;
+	    while(n > 1):
+	        value *= n;
+	    n -= 1;
+	    return value;
+	
 	something(x);
 	
 	y = x + 3;
 	z = y-(100*x);
 	x -= 1;
+
+	ten_fac = factorial(10);
 
 	while x > 125:
 	    statement;
