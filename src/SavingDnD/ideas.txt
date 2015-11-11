@@ -1,0 +1,18 @@
+I was thinking something like xml (this is pseudocode):
+<xml Project:"name=Untitled|Version='1.0.0'">
+  <object type:window width:800 height:600>
+    <code>
+      window loop code here
+    </code>
+    <object type:canvas x:0 y:0 width:800 height:600 default_color:"#FFFFFF">
+      <code>
+        canvas code here
+      </code>
+      <object type:button x:0 y:0 width:120 height:75 text:"click-me">
+        <code>
+          button code here
+        </code>
+      </object>
+    </object>
+  </object>
+</xml>
